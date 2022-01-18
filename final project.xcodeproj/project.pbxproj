@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E63B25442796DE3400D0A56E /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B25432796DE3400D0A56E /* WeatherData.swift */; };
+		E63B25462796DE6E00D0A56E /* YoutubePlaylistData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B25452796DE6E00D0A56E /* YoutubePlaylistData.swift */; };
+		E63B25482796DE9000D0A56E /* YoutubePVData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B25472796DE9000D0A56E /* YoutubePVData.swift */; };
+		E63B254A2796DEC200D0A56E /* GameInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B25492796DEC200D0A56E /* GameInfoViewModel.swift */; };
+		E63B254C2796DEE900D0A56E /* SafariViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B254B2796DEE900D0A56E /* SafariViewModel.swift */; };
+		E63B254E2796DF0D00D0A56E /* VideoItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B254D2796DF0D00D0A56E /* VideoItemViewModel.swift */; };
+		E63B25502796DF3300D0A56E /* WeatherItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B254F2796DF3300D0A56E /* WeatherItemViewModel.swift */; };
+		E63B25522796DF5300D0A56E /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B25512796DF5300D0A56E /* WebViewModel.swift */; };
+		E63B25542796DF7500D0A56E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B25532796DF7500D0A56E /* HomeView.swift */; };
+		E63B25562796DF9700D0A56E /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B25552796DF9700D0A56E /* WeatherView.swift */; };
+		E63B25582796DFB800D0A56E /* YoutubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B25572796DFB800D0A56E /* YoutubeView.swift */; };
 		E65D13C7278DA7D300A516A1 /* final_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65D13C6278DA7D300A516A1 /* final_projectApp.swift */; };
 		E65D13C9278DA7D300A516A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65D13C8278DA7D300A516A1 /* ContentView.swift */; };
 		E65D13CB278DA7DA00A516A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E65D13CA278DA7DA00A516A1 /* Assets.xcassets */; };
@@ -14,6 +25,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E63B25432796DE3400D0A56E /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		E63B25452796DE6E00D0A56E /* YoutubePlaylistData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubePlaylistData.swift; sourceTree = "<group>"; };
+		E63B25472796DE9000D0A56E /* YoutubePVData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubePVData.swift; sourceTree = "<group>"; };
+		E63B25492796DEC200D0A56E /* GameInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfoViewModel.swift; sourceTree = "<group>"; };
+		E63B254B2796DEE900D0A56E /* SafariViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariViewModel.swift; sourceTree = "<group>"; };
+		E63B254D2796DF0D00D0A56E /* VideoItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoItemViewModel.swift; sourceTree = "<group>"; };
+		E63B254F2796DF3300D0A56E /* WeatherItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherItemViewModel.swift; sourceTree = "<group>"; };
+		E63B25512796DF5300D0A56E /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
+		E63B25532796DF7500D0A56E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E63B25552796DF9700D0A56E /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		E63B25572796DFB800D0A56E /* YoutubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeView.swift; sourceTree = "<group>"; };
 		E65D13C3278DA7D300A516A1 /* final project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "final project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E65D13C6278DA7D300A516A1 /* final_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = final_projectApp.swift; sourceTree = "<group>"; };
 		E65D13C8278DA7D300A516A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +73,9 @@
 		E65D13C5278DA7D300A516A1 /* final project */ = {
 			isa = PBXGroup;
 			children = (
+				E65D13D6278DA81B00A516A1 /* view models */,
+				E65D13D5278DA81400A516A1 /* models */,
+				E65D13D4278DA80900A516A1 /* views */,
 				E65D13C6278DA7D300A516A1 /* final_projectApp.swift */,
 				E65D13C8278DA7D300A516A1 /* ContentView.swift */,
 				E65D13CA278DA7DA00A516A1 /* Assets.xcassets */,
@@ -65,6 +90,38 @@
 				E65D13CD278DA7DA00A516A1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E65D13D4278DA80900A516A1 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				E63B25532796DF7500D0A56E /* HomeView.swift */,
+				E63B25552796DF9700D0A56E /* WeatherView.swift */,
+				E63B25572796DFB800D0A56E /* YoutubeView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		E65D13D5278DA81400A516A1 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				E63B25432796DE3400D0A56E /* WeatherData.swift */,
+				E63B25452796DE6E00D0A56E /* YoutubePlaylistData.swift */,
+				E63B25472796DE9000D0A56E /* YoutubePVData.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		E65D13D6278DA81B00A516A1 /* view models */ = {
+			isa = PBXGroup;
+			children = (
+				E63B25492796DEC200D0A56E /* GameInfoViewModel.swift */,
+				E63B254B2796DEE900D0A56E /* SafariViewModel.swift */,
+				E63B254D2796DF0D00D0A56E /* VideoItemViewModel.swift */,
+				E63B254F2796DF3300D0A56E /* WeatherItemViewModel.swift */,
+				E63B25512796DF5300D0A56E /* WebViewModel.swift */,
+			);
+			path = "view models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +194,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E63B254C2796DEE900D0A56E /* SafariViewModel.swift in Sources */,
+				E63B254A2796DEC200D0A56E /* GameInfoViewModel.swift in Sources */,
 				E65D13C9278DA7D300A516A1 /* ContentView.swift in Sources */,
+				E63B25582796DFB800D0A56E /* YoutubeView.swift in Sources */,
+				E63B25562796DF9700D0A56E /* WeatherView.swift in Sources */,
+				E63B25522796DF5300D0A56E /* WebViewModel.swift in Sources */,
+				E63B25462796DE6E00D0A56E /* YoutubePlaylistData.swift in Sources */,
+				E63B25542796DF7500D0A56E /* HomeView.swift in Sources */,
+				E63B25502796DF3300D0A56E /* WeatherItemViewModel.swift in Sources */,
+				E63B25442796DE3400D0A56E /* WeatherData.swift in Sources */,
+				E63B254E2796DF0D00D0A56E /* VideoItemViewModel.swift in Sources */,
+				E63B25482796DE9000D0A56E /* YoutubePVData.swift in Sources */,
 				E65D13C7278DA7D300A516A1 /* final_projectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
