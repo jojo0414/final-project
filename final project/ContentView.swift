@@ -5,7 +5,7 @@ struct ContentView: View {
     
     var dragGesture: some Gesture {
         DragGesture()
-                .onChanged({ value in
+            .onEnded({ value in
                     print(value.translation.width)
                     if(value.translation.width < 0){
                         if tabSelection == 0{
@@ -31,15 +31,15 @@ struct ContentView: View {
             Home()
                 .tabItem{
                     Label("主頁", systemImage: "house.fill")
-                }
+                }.tag(0)
             YoutubeView()
                 .tabItem {
                     Label("Youtube", systemImage: "play.rectangle.fill")
-                }
+                }.tag(1)
             WeatherView()
                 .tabItem {
                     Label("天氣", systemImage:  "thermometer.sun.fill")
-                }
+                }.tag(2)
         }
         .gesture(dragGesture)
         

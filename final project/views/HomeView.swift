@@ -8,24 +8,44 @@
 import SwiftUI
 
 struct Home: View {
+    
+    var body: some View {
+        TimelineView(.periodic(from: .now, by: 2.0)){timeline in
+            TabItemView(date: timeline.date)
+        }
+    }
+}
+
+struct TabItemView: View {
+    
     @State private var showHoYoLab = false
     @State private var showFB = false
     @State private var showIG = false
     @State private var tabSelection = 0
+    let date: Date
+    
+    func addTab(){
+        if tabSelection == PVs.count - 1 {
+            tabSelection = 0
+        }
+        else{
+            tabSelection += 1
+        }
+    }
     
     var body: some View {
         NavigationView {
             ScrollView{
                 VStack{
                     TabView(selection: $tabSelection){
-                        ForEach(PVs){item in
+                        ForEach(PVs.indices){index in
                             NavigationLink{
-                                WebView(urlString: "https://www.youtube.com/watch?v=" + item.videoId)
+                                WebView(urlString: "https://www.youtube.com/watch?v=" + PVs[index].videoId)
                             } label: {
-                                Image(item.name)
+                                Image(PVs[index].name)
                                     .resizable()
                                     .scaledToFit()
-                            }
+                            }.tag(index)
                         }
                     }
                     .tabViewStyle(.page)
@@ -90,6 +110,9 @@ struct Home: View {
                     Spacer(minLength: 30)
                 }
             }
+        }
+        .onChange(of: date) { _ in
+            addTab()
         }
     }
 }

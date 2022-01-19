@@ -18,6 +18,7 @@
 		E63B25542796DF7500D0A56E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B25532796DF7500D0A56E /* HomeView.swift */; };
 		E63B25562796DF9700D0A56E /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B25552796DF9700D0A56E /* WeatherView.swift */; };
 		E63B25582796DFB800D0A56E /* YoutubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B25572796DFB800D0A56E /* YoutubeView.swift */; };
+		E63B255B2797871200D0A56E /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = E63B255A2797871200D0A56E /* FSCalendar */; };
 		E65D13C7278DA7D300A516A1 /* final_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65D13C6278DA7D300A516A1 /* final_projectApp.swift */; };
 		E65D13C9278DA7D300A516A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65D13C8278DA7D300A516A1 /* ContentView.swift */; };
 		E65D13CB278DA7DA00A516A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E65D13CA278DA7DA00A516A1 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E63B255B2797871200D0A56E /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +142,9 @@
 			dependencies = (
 			);
 			name = "final project";
+			packageProductDependencies = (
+				E63B255A2797871200D0A56E /* FSCalendar */,
+			);
 			productName = "final project";
 			productReference = E65D13C3278DA7D300A516A1 /* final project.app */;
 			productType = "com.apple.product-type.application";
@@ -168,6 +173,9 @@
 				Base,
 			);
 			mainGroup = E65D13BA278DA7D300A516A1;
+			packageReferences = (
+				E63B25592797871200D0A56E /* XCRemoteSwiftPackageReference "FSCalendar" */,
+			);
 			productRefGroup = E65D13C4278DA7D300A516A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -345,6 +353,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,6 +383,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -409,6 +419,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E63B25592797871200D0A56E /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E63B255A2797871200D0A56E /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E63B25592797871200D0A56E /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E65D13BB278DA7D300A516A1 /* Project object */;
 }
