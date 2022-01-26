@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct YoutubeView: View{
+    @EnvironmentObject var background: BackgroundPicture
     @StateObject var youtubePlaylistData = YoutubePlaylistData()
     @State private var searchText = ""
+    
     
     var body: some View{
         NavigationView {
@@ -24,6 +26,7 @@ struct YoutubeView: View{
                     } label: {
                         VideoItemView(item: item)
                     }
+                    .listRowBackground(background.backgroundColor)
                 }
             }
             .searchable(text: $searchText)

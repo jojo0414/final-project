@@ -18,12 +18,46 @@
 		E63B25542796DF7500D0A56E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B25532796DF7500D0A56E /* HomeView.swift */; };
 		E63B25562796DF9700D0A56E /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B25552796DF9700D0A56E /* WeatherView.swift */; };
 		E63B25582796DFB800D0A56E /* YoutubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B25572796DFB800D0A56E /* YoutubeView.swift */; };
-		E63B255B2797871200D0A56E /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = E63B255A2797871200D0A56E /* FSCalendar */; };
 		E65D13C7278DA7D300A516A1 /* final_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65D13C6278DA7D300A516A1 /* final_projectApp.swift */; };
 		E65D13C9278DA7D300A516A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65D13C8278DA7D300A516A1 /* ContentView.swift */; };
 		E65D13CB278DA7DA00A516A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E65D13CA278DA7DA00A516A1 /* Assets.xcassets */; };
 		E65D13CE278DA7DA00A516A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E65D13CD278DA7DA00A516A1 /* Preview Assets.xcassets */; };
+		E666DA2F279D836100775FAC /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E666DA2E279D836100775FAC /* PersistenceController.swift */; };
+		E673870A279BD93D00E0520E /* EventCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6738708279BD93D00E0520E /* EventCoreData.xcdatamodeld */; };
+		E673872D279BDCE200E0520E /* addEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E673872C279BDCE200E0520E /* addEventViewModel.swift */; };
+		E691D9EE27A1A55600CDA808 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E666DA36279D9D2100775FAC /* WidgetKit.framework */; };
+		E691D9EF27A1A55600CDA808 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E666DA38279D9D2100775FAC /* SwiftUI.framework */; };
+		E691D9F227A1A55600CDA808 /* BatteryWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E691D9F127A1A55600CDA808 /* BatteryWidget.swift */; };
+		E691D9F427A1A55700CDA808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E691D9F327A1A55700CDA808 /* Assets.xcassets */; };
+		E691D9F827A1A55700CDA808 /* BatteryWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E691D9ED27A1A55600CDA808 /* BatteryWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E691D9FD27A1BBD100CDA808 /* BackgroundData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E691D9FC27A1BBD100CDA808 /* BackgroundData.swift */; };
+		E69CB203279AA30500634008 /* CalenderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69CB202279AA30500634008 /* CalenderViewModel.swift */; };
+		E6DC0B9A279AA51600E379FD /* StepperView in Frameworks */ = {isa = PBXBuildFile; productRef = E6DC0B99279AA51600E379FD /* StepperView */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E691D9F627A1A55700CDA808 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E65D13BB278DA7D300A516A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E691D9EC27A1A55600CDA808;
+			remoteInfo = BatteryWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E666DA46279D9D2900775FAC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E691D9F827A1A55700CDA808 /* BatteryWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E63B25432796DE3400D0A56E /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
@@ -42,6 +76,19 @@
 		E65D13C8278DA7D300A516A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E65D13CA278DA7DA00A516A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E65D13CD278DA7DA00A516A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E666DA2E279D836100775FAC /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		E666DA36279D9D2100775FAC /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E666DA38279D9D2100775FAC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E666DA47279DA0CD00775FAC /* final project.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "final project.entitlements"; sourceTree = "<group>"; };
+		E666DA48279DA6B000775FAC /* EventWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EventWidgetExtension.entitlements; sourceTree = "<group>"; };
+		E6738709279BD93D00E0520E /* EventCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventCoreData.xcdatamodel; sourceTree = "<group>"; };
+		E673872C279BDCE200E0520E /* addEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addEventViewModel.swift; sourceTree = "<group>"; };
+		E691D9ED27A1A55600CDA808 /* BatteryWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BatteryWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E691D9F127A1A55600CDA808 /* BatteryWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryWidget.swift; sourceTree = "<group>"; };
+		E691D9F327A1A55700CDA808 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E691D9F527A1A55700CDA808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E691D9FC27A1BBD100CDA808 /* BackgroundData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundData.swift; sourceTree = "<group>"; };
+		E69CB202279AA30500634008 /* CalenderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +96,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E63B255B2797871200D0A56E /* FSCalendar in Frameworks */,
+				E6DC0B9A279AA51600E379FD /* StepperView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E691D9EA27A1A55600CDA808 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E691D9EF27A1A55600CDA808 /* SwiftUI.framework in Frameworks */,
+				E691D9EE27A1A55600CDA808 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +115,10 @@
 		E65D13BA278DA7D300A516A1 = {
 			isa = PBXGroup;
 			children = (
+				E666DA48279DA6B000775FAC /* EventWidgetExtension.entitlements */,
 				E65D13C5278DA7D300A516A1 /* final project */,
+				E691D9F027A1A55600CDA808 /* BatteryWidget */,
+				E666DA35279D9D2100775FAC /* Frameworks */,
 				E65D13C4278DA7D300A516A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				E65D13C3278DA7D300A516A1 /* final project.app */,
+				E691D9ED27A1A55600CDA808 /* BatteryWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +135,7 @@
 		E65D13C5278DA7D300A516A1 /* final project */ = {
 			isa = PBXGroup;
 			children = (
+				E666DA47279DA0CD00775FAC /* final project.entitlements */,
 				E65D13D6278DA81B00A516A1 /* view models */,
 				E65D13D5278DA81400A516A1 /* models */,
 				E65D13D4278DA80900A516A1 /* views */,
@@ -82,6 +143,8 @@
 				E65D13C8278DA7D300A516A1 /* ContentView.swift */,
 				E65D13CA278DA7DA00A516A1 /* Assets.xcassets */,
 				E65D13CC278DA7DA00A516A1 /* Preview Content */,
+				E6738708279BD93D00E0520E /* EventCoreData.xcdatamodeld */,
+				E666DA2E279D836100775FAC /* PersistenceController.swift */,
 			);
 			path = "final project";
 			sourceTree = "<group>";
@@ -110,6 +173,7 @@
 				E63B25432796DE3400D0A56E /* WeatherData.swift */,
 				E63B25452796DE6E00D0A56E /* YoutubePlaylistData.swift */,
 				E63B25472796DE9000D0A56E /* YoutubePVData.swift */,
+				E691D9FC27A1BBD100CDA808 /* BackgroundData.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -122,8 +186,29 @@
 				E63B254D2796DF0D00D0A56E /* VideoItemViewModel.swift */,
 				E63B254F2796DF3300D0A56E /* WeatherItemViewModel.swift */,
 				E63B25512796DF5300D0A56E /* WebViewModel.swift */,
+				E69CB202279AA30500634008 /* CalenderViewModel.swift */,
+				E673872C279BDCE200E0520E /* addEventViewModel.swift */,
 			);
 			path = "view models";
+			sourceTree = "<group>";
+		};
+		E666DA35279D9D2100775FAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E666DA36279D9D2100775FAC /* WidgetKit.framework */,
+				E666DA38279D9D2100775FAC /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E691D9F027A1A55600CDA808 /* BatteryWidget */ = {
+			isa = PBXGroup;
+			children = (
+				E691D9F127A1A55600CDA808 /* BatteryWidget.swift */,
+				E691D9F327A1A55700CDA808 /* Assets.xcassets */,
+				E691D9F527A1A55700CDA808 /* Info.plist */,
+			);
+			path = BatteryWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,18 +221,37 @@
 				E65D13BF278DA7D300A516A1 /* Sources */,
 				E65D13C0278DA7D300A516A1 /* Frameworks */,
 				E65D13C1278DA7D300A516A1 /* Resources */,
+				E666DA46279D9D2900775FAC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E691D9F727A1A55700CDA808 /* PBXTargetDependency */,
+			);
+			name = "final project";
+			packageProductDependencies = (
+				E6DC0B99279AA51600E379FD /* StepperView */,
+			);
+			productName = "final project";
+			productReference = E65D13C3278DA7D300A516A1 /* final project.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E691D9EC27A1A55600CDA808 /* BatteryWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E691D9F927A1A55700CDA808 /* Build configuration list for PBXNativeTarget "BatteryWidgetExtension" */;
+			buildPhases = (
+				E691D9E927A1A55600CDA808 /* Sources */,
+				E691D9EA27A1A55600CDA808 /* Frameworks */,
+				E691D9EB27A1A55600CDA808 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "final project";
-			packageProductDependencies = (
-				E63B255A2797871200D0A56E /* FSCalendar */,
-			);
-			productName = "final project";
-			productReference = E65D13C3278DA7D300A516A1 /* final project.app */;
-			productType = "com.apple.product-type.application";
+			name = BatteryWidgetExtension;
+			productName = BatteryWidgetExtension;
+			productReference = E691D9ED27A1A55600CDA808 /* BatteryWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -162,6 +266,9 @@
 					E65D13C2278DA7D300A516A1 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
+					E691D9EC27A1A55600CDA808 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 				};
 			};
 			buildConfigurationList = E65D13BE278DA7D300A516A1 /* Build configuration list for PBXProject "final project" */;
@@ -174,13 +281,14 @@
 			);
 			mainGroup = E65D13BA278DA7D300A516A1;
 			packageReferences = (
-				E63B25592797871200D0A56E /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				E6DC0B98279AA51600E379FD /* XCRemoteSwiftPackageReference "StepperView" */,
 			);
 			productRefGroup = E65D13C4278DA7D300A516A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				E65D13C2278DA7D300A516A1 /* final project */,
+				E691D9EC27A1A55600CDA808 /* BatteryWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -195,6 +303,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E691D9EB27A1A55600CDA808 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E691D9F427A1A55700CDA808 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -202,23 +318,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E673870A279BD93D00E0520E /* EventCoreData.xcdatamodeld in Sources */,
 				E63B254C2796DEE900D0A56E /* SafariViewModel.swift in Sources */,
 				E63B254A2796DEC200D0A56E /* GameInfoViewModel.swift in Sources */,
 				E65D13C9278DA7D300A516A1 /* ContentView.swift in Sources */,
 				E63B25582796DFB800D0A56E /* YoutubeView.swift in Sources */,
+				E673872D279BDCE200E0520E /* addEventViewModel.swift in Sources */,
 				E63B25562796DF9700D0A56E /* WeatherView.swift in Sources */,
 				E63B25522796DF5300D0A56E /* WebViewModel.swift in Sources */,
 				E63B25462796DE6E00D0A56E /* YoutubePlaylistData.swift in Sources */,
+				E691D9FD27A1BBD100CDA808 /* BackgroundData.swift in Sources */,
 				E63B25542796DF7500D0A56E /* HomeView.swift in Sources */,
+				E666DA2F279D836100775FAC /* PersistenceController.swift in Sources */,
 				E63B25502796DF3300D0A56E /* WeatherItemViewModel.swift in Sources */,
 				E63B25442796DE3400D0A56E /* WeatherData.swift in Sources */,
+				E69CB203279AA30500634008 /* CalenderViewModel.swift in Sources */,
 				E63B254E2796DF0D00D0A56E /* VideoItemViewModel.swift in Sources */,
 				E63B25482796DE9000D0A56E /* YoutubePVData.swift in Sources */,
 				E65D13C7278DA7D300A516A1 /* final_projectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E691D9E927A1A55600CDA808 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E691D9F227A1A55600CDA808 /* BatteryWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E691D9F727A1A55700CDA808 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E691D9EC27A1A55600CDA808 /* BatteryWidgetExtension */;
+			targetProxy = E691D9F627A1A55700CDA808 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E65D13CF278DA7DA00A516A1 /* Debug */ = {
@@ -340,8 +477,10 @@
 		E65D13D2278DA7DA00A516A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "final project/final project.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"final project/Preview Content\"";
@@ -370,8 +509,10 @@
 		E65D13D3278DA7DA00A516A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "final project/final project.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"final project/Preview Content\"";
@@ -391,6 +532,60 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "jojo.final-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E691D9FA27A1A55700CDA808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6662LXK987;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BatteryWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BatteryWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jojo.final-project.BatteryWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E691D9FB27A1A55700CDA808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6662LXK987;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BatteryWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BatteryWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jojo.final-project.BatteryWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -418,26 +613,48 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		E691D9F927A1A55700CDA808 /* Build configuration list for PBXNativeTarget "BatteryWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E691D9FA27A1A55700CDA808 /* Debug */,
+				E691D9FB27A1A55700CDA808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E63B25592797871200D0A56E /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+		E6DC0B98279AA51600E379FD /* XCRemoteSwiftPackageReference "StepperView" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			repositoryURL = "https://github.com/badrinathvm/StepperView.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E63B255A2797871200D0A56E /* FSCalendar */ = {
+		E6DC0B99279AA51600E379FD /* StepperView */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E63B25592797871200D0A56E /* XCRemoteSwiftPackageReference "FSCalendar" */;
-			productName = FSCalendar;
+			package = E6DC0B98279AA51600E379FD /* XCRemoteSwiftPackageReference "StepperView" */;
+			productName = StepperView;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		E6738708279BD93D00E0520E /* EventCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E6738709279BD93D00E0520E /* EventCoreData.xcdatamodel */,
+			);
+			currentVersion = E6738709279BD93D00E0520E /* EventCoreData.xcdatamodel */;
+			path = EventCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E65D13BB278DA7D300A516A1 /* Project object */;
 }
